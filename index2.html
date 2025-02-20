@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Name is Sudeis</title>
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-height: 100vh;
+        background-image: url('/home/sudeis/image');
+        background-size: cover;
+        background-position: center;
+      }
+      .left-panel {
+        width: 30%;
+        background-color: #e6f7ff; /* Light blue */
+        padding: 20px;
+        text-align: center;
+      }
+      .right-panel {
+        width: 70%;
+        padding: 20px;
+        background-color: #fff3e6; /* Light peach */
+      }
+      h1 {
+        color: #af1111;
+      }
+      p {
+        font-size: 34px;
+      }
+      .contact {
+        margin-top: 20px;
+      }
+      button {
+        background-color: #2da115;
+        color: black;
+        padding: 10px 20px;
+        border: purple;
+        cursor: pointer;
+        margin: 10px 0;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin: 20px auto;
+      }
+      .contacts-section {
+        display:flexbox;
+        flex-direction: column;
+        display: none;
+      }
+      .contacts-section textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+    <script>
+      function toggleContacts() {
+        const section = document.querySelector('.contacts-section');
+        section.style.display = section.style.display === 'block' ? 'none' : 'block';
+      }
+    </script>
+  </head>
+  <body>
+    <div class="left-panel">
+      <img src="/home/sudeis/images" alt="Profile Picture" class="profile-picture" />
+      <h1>My Name is Sudeis</h1>
+      <p>I am a web developer</p>
+      <p>I am a student</p>
+      <div class="contact">
+        <a href="mailto:ahmedsudei324@gmail.c">ahmedsudeis324@gmail.com</a>
+        <br>
+        <a href="https://github.com/sudi6">GitHub</a> <object data="" type=""></object>
+        <p>contact me</p><p>0117140565</p>
+      </div>
+    </div>
+    <div class="right-panel">
+      <!-- Content for the right panel can be added here -->
+    </div>
+  </body>
+</html>
