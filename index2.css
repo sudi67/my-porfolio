@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Container */
+.main-container {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Info Section */
+.info-section {
+    text-align: center;
+}
+
+.info-section p {
+    font-size: 16px;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.email-section {
+    margin-top: 20px;
+}
+
+.email-section input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* White Section */
+.white-section {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.white-section h2 {
+    text-align: center;
+}
+
+.about-me {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+    border: 2px solid #28a745;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.skills-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section ul li {
+    margin: 10px 0;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-section, .white-section {
+        width: 80%;
+    }
+}
