@@ -1,16 +1,16 @@
 /* General Styles */
 body {
-    background: linear-gradient(to right, #f03030, #df6972);
+    background: linear-gradient(to right, #0b19e0, #3e84be);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #7a1818;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #5f4ba8;
+    background-color: #0c9656;
     color: white;
 }
 
@@ -27,6 +27,7 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Main Container */
@@ -40,7 +41,7 @@ header nav ul li a {
 }
 
 /* Profile Section */
-.profile-section {
+.profile-section, .contact-section {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -51,19 +52,10 @@ header nav ul li a {
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
-/* Info Section */
-.info-section {
-    text-align: center;
-}
-
-.info-section p {
-    font-size: 16px;
-    margin: 5px 0;
-    line-height: 1.5;
-}
-
+/* Contact Section */
 .email-section {
     margin-top: 20px;
 }
@@ -77,8 +69,8 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-/* White Section */
-.white-section {
+/* About Section */
+.about-section, .projects-section, .skills-section {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 20px;
     border-radius: 10px;
@@ -86,26 +78,38 @@ header nav ul li a {
     margin: 20px 0;
 }
 
-.white-section h2 {
+.about-section h2, .projects-section h2, .skills-section h2 {
     text-align: center;
 }
 
-.about-me {
+.about-section p, .projects-section ul, .skills-section ul {
     text-align: left;
     margin-top: 20px;
+    line-height: 1.6;
+    list-style: none;
+    padding: 0;
+}
+
+.projects-section ul li, .skills-section ul li {
+    margin: 10px 0;
+}
+
+.projects-section ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projects-section ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Skills Section */
 .skills-section {
-    border: 2px solid
+    border: 2px solid #28a745;
     width: 60%;
     margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 10px;
 }
 
 .skills-section:hover {
@@ -113,28 +117,22 @@ header nav ul li a {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-.skills-section ul {
-    list-style: none;
-    padding: 0;
-}
-
 .skills-section ul li {
-    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .skill-logo {
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 
 /* Button Styles */
 button {
-    background-color: #0f12ca;
-    color: rgb(241, 225, 181);
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -149,17 +147,18 @@ button:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #df0cd4;
+    padding: 20px 0;
+    background-color: #eb22eb;
     color: white;
     position: fixed;
-    width: 10%;
+    width: 20%;
     bottom: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .skills-section, .white-section {
+    .skills-section, .about-section, .projects-section {
         width: 80%;
     }
-}
+    }
+
